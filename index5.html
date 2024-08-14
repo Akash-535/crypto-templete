@@ -36,56 +36,77 @@
             margin-right: auto;
         }
 
+        .heading {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 116%;
+            text-align: center;
+            padding-bottom: 18px;
+        }
+
+        .text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 130%;
+            text-align: center;
+            color: #4B4B4B;
+        }
+
+        .pt-4 {
+            padding-top: 4px;
+        }
+
+        .pt-50 {
+            padding-top: 50px;
+        }
+
+        .pt-40 {
+            padding-top: 40px;
+        }
+
+        .pb-42 {
+            padding-bottom: 42px;
+        }
+
+        .py-40 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .img-size {
+            width: 252px;
+            height: 161px;
+        }
+
         @media only screen and (max-width: 576px) {
-            .blue_box_button {
-                padding-top: 20px !important;
+            .heading {
+                font-size: 22px;
+                padding-bottom: 12px;
             }
 
-            .blue-btn {
-                font-size: 14px !important;
+            .text {
+                font-size: 12px;
             }
 
-            .p_40_16 {
-                padding: 40px 16px !important;
+            .pt-sm-25 {
+                padding-top: 25px;
             }
 
-            .p_30_24 {
-                padding: 30px 24px !important;
+            .pb-sm-34 {
+                padding-bottom: 34px;
             }
 
-            .pt_10 {
-                padding-top: 10px !important;
+            .hero-section-padding {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 24px;
+                padding-right: 24px;
             }
 
-            .pt_20 {
-                padding-top: 20px !important;
-            }
+            .img-size {
+                width: 215px;
+                height: 150px;
 
-            .fs_27 {
-                font-size: 20px !important;
-                line-height: 25px !important;
-            }
-
-            .pb_30 {
-                padding-bottom: 30px !important;
-            }
-
-            .ps_0 {
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-            }
-
-            .fs_16 {
-                font-size: 16px !important;
-                line-height: 25px !important;
-            }
-
-            .w_100 {
-                width: 100% !important;
-            }
-
-            .text_center {
-                text-align: center !important;
             }
 
             .g-item1 {
@@ -124,18 +145,20 @@
 
 <body>
     <!-- ------------- Your Guide to Adding a Bitcoin Wallet------------------- -->
-    <section
-        style="width: 100%; padding: 10px; padding-top: 40px; padding-bottom: 40px; margin: auto; background-color: #F6F8FF;">
-        <div style="text-align: center; padding-bottom: 35px; " class="logo-div">
-            <a href="#"><img style="max-width: 186px;" src="https://i.postimg.cc/7hyQJ5CV/qwert.png" alt="logo" /></a>
+    <section style="width: 100%; background-color: #F6F8FF;" class="hero-section-padding py-40">
+        <div style="text-align: center; padding-bottom: 32px;">
+            <a href="https://www.cryptodispensers.com/" target="_blank">
+                <img src="https://img.mailinblue.com/8005024/images/content_library/original/66bc478ce9738ca499bb1e2e.png"
+                    alt="logo" width="186">
+            </a>
         </div>
         <div style="text-align: center;padding-bottom: 41px;">
             <a href="/">
-                <img src="https://i.postimg.cc/wBQRyLd0/address.png" alt="hero-image" width="252px" height="161px">
+                <img src="https://i.postimg.cc/wBQRyLd0/address.png" alt="hero-image" class="img-size">
             </a>
         </div>
         <div style="width: 100%;text-align: center;padding-bottom: 18px;">
-            <p style="color: black;font-size: 32px;font-weight: 600;line-height: 116%;text-align: center; ">
+            <p class="heading">
                 Add Your Bitcoin Address</p>
         </div>
         <div style="width: 100%;text-align: center; max-width: 419px; margin-right: auto; margin-left: auto;">
@@ -253,7 +276,7 @@
 
 
             <table
-                style="max-width: 144px; margin-left: auto; margin-right: auto; margin-top: 20px; padding-bottom: 12px;">
+                style="max-width: 144px; margin-left: auto; margin-right: auto; padding-top: 20px; padding-bottom: 20px;">
                 <tr>
                     <td>
                         <a href="https://www.facebook.com/" target="_blank"><img

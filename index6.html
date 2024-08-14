@@ -36,6 +36,11 @@
             margin-top: 30px;
         }
 
+        .card {
+            border-radius: 12px;
+            border: 2px solid #356CE126;
+        }
+
         .max-width-675 {
             max-width: 675px;
         }
@@ -45,7 +50,56 @@
             margin-right: auto;
         }
 
+        .heading {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 116%;
+            text-align: center;
+            padding-bottom: 18px;
+        }
+
+        .text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 130%;
+            text-align: center;
+            color: #4B4B4B;
+        }
+
+        .pt-4 {
+            padding-top: 4px;
+        }
+
+        .pt-50 {
+            padding-top: 50px;
+        }
+
+        .pt-40 {
+            padding-top: 40px;
+        }
+
+        .pb-42 {
+            padding-bottom: 42px;
+        }
+
+        .py-40 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .img-size {
+            width: 252px;
+            height: 161px;
+        }
+
+
         @media only screen and (max-width: 576px) {
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
             .her-section-heading {
                 font-size: 44px !important;
@@ -59,16 +113,38 @@
                 max-width: 100% !important;
             }
 
-            .p_40_16 {
-                padding: 40px 16px !important;
-            }
 
             .p_30_24 {
                 padding: 30px 24px !important;
             }
 
-            .pt_10 {
-                padding-top: 10px !important;
+            .heading {
+                font-size: 21px;
+                padding-bottom: 12px;
+            }
+
+            .text {
+                font-size: 12px;
+            }
+
+            .pt-sm-25 {
+                padding-top: 25px;
+            }
+
+            .pb-sm-34 {
+                padding-bottom: 34px;
+            }
+
+            .hero-section-padding {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            .img-size {
+                width: 215px;
+                height: 150px;
             }
 
             .pt_20 {
@@ -80,30 +156,53 @@
                 line-height: 25px !important;
             }
 
-            .pb_30 {
-                padding-bottom: 30px !important;
-            }
-
-            .ps_0 {
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-            }
-
-            .fs_16 {
-                font-size: 16px !important;
-                line-height: 25px !important;
-            }
 
             .fs_14 {
                 font-size: 14px !important;
             }
 
-            .w_100 {
-                width: 100% !important;
+            .pt_20 {
+                padding-top: 20px !important;
             }
 
-            .text_center {
-                text-align: center !important;
+            .wh-130-80 {
+                width: 130px !important;
+                height: 80px !important;
+            }
+
+            .wh-100-45 {
+                width: 100px !important;
+                height: 45px !important;
+            }
+
+            .wh-95-45 {
+                width: 95px !important;
+                height: 45px !important;
+            }
+
+            .wh-125-34 {
+                width: 125px !important;
+                height: 34px !important;
+            }
+
+            .wh-125-40 {
+                width: 125px !important;
+                height: 40px !important;
+            }
+
+            .wh-105-46 {
+                width: 105px !important;
+                height: 46px !important;
+            }
+
+            .wh-146-33 {
+                width: 146px !important;
+                height: 33px !important;
+            }
+
+            .wh-155-30 {
+                width: 155px !important;
+                height: 30px !important;
             }
         }
     </style>
@@ -113,41 +212,43 @@
     <!-- ------------ Your Guide to Adding a Bitcoin Wallet2------------------- -->
     <section
         style="width: 100%; padding: 10px;  padding-top: 40px; padding-bottom: 40px;  margin: auto; background-color: #F6F8FF;">
+        <div class="container">
+            <div style="text-align: center; padding-bottom: 35px; " class="logo-div">
+                <a href="#"><img style="max-width: 186px;" src="https://i.postimg.cc/7hyQJ5CV/qwert.png"
+                        alt="logo" /></a>
+            </div>
 
-        <div style="text-align: center; padding-bottom: 35px; " class="logo-div">
-            <a href="#"><img style="max-width: 186px;" src="https://i.postimg.cc/7hyQJ5CV/qwert.png" alt="logo" /></a>
-        </div>
-
-        <div style="text-align: center;padding-bottom: 41px;">
-            <a href="/">
-                <img src="https://i.postimg.cc/kgC8CLTR/Group-15.png" alt="logo" width="252px" height="161px">
-            </a>
-        </div>
-        <div style="width: 100%;text-align: center;">
-            <p
-                style="   font-size: 32px;font-weight: 600;line-height: 116%;text-align: center;padding-bottom: 18px; max-width: 460px; margin: auto;">
-                Add Cash Locally, Buy Bitcoin Instantly</p>
-        </div>
-        <div style="width: 100%;text-align: center;padding-bottom: 2px;">
-            <p style="  font-size: 14px;font-weight: 400;line-height: 130%;text-align: center;color: #4B4B4B;">
-                Ready to buy Bitcoin?</p>
-        </div>
-        <div style="width: 100%;text-align: center;">
-            <p style="  font-size: 14px;font-weight: 400;line-height: 130%;text-align: center;color: #4B4B4B;">
-                Visit any of these stores to get started.</p>
-        </div>
+            <div style="text-align: center;padding-bottom: 41px;">
+                <a href="/">
+                    <img src="https://i.postimg.cc/kgC8CLTR/Group-15.png" alt="logo" width="252px" height="161px">
+                </a>
+            </div>
+            <div style="width: 100%;text-align: center;">
+                <p
+                    style="   font-size: 32px;font-weight: 600;line-height: 116%;text-align: center;padding-bottom: 18px; max-width: 460px; margin: auto;">
+                    Add Cash Locally, Buy Bitcoin Instantly</p>
+            </div>
+            <div style="width: 100%;text-align: center;padding-bottom: 2px;">
+                <p style="  font-size: 14px;font-weight: 400;line-height: 130%;text-align: center;color: #4B4B4B;">
+                    Ready to buy Bitcoin?</p>
+            </div>
+            <div style="width: 100%;text-align: center;">
+                <p style="  font-size: 14px;font-weight: 400;line-height: 130%;text-align: center;color: #4B4B4B;">
+                    Visit any of these stores to get started.</p>
+            </div>
 
         </div>
     </section>
     <!-- ==company cards=== -->
     <section>
-        <div
+        <div class="container"
             style="max-width: 675px; padding-left: 12px; padding-right: 12px; background-color: white;  width: 100%; padding-top: 60px; margin-left: auto; margin-right: auto;">
-            <div>
+
+            <div style="padding: 0px 24px;">
                 <p style="text-align: center; font-weight: 500; margin-bottom: 20px; font-size: 24px ; margin-top: 0;">
                     Available At</p>
             </div>
-            <div>
+            <div style="padding: 0px 24px;">
                 <p
                     style="text-align: center; font-weight: 300; font-size: 14px;    margin-bottom: 20px; color: #4D4D4D;">
                     CVS, Rite Aid,
@@ -161,19 +262,19 @@
                             cellspacing="0" border="0">
                             <tr>
                                 <td style="height: 88px;">
-                                    <img style="width: 140px; height: 88px;"
+                                    <img class="wh-130-80" style="width: 140px; height: 88px;"
                                         src="https://i.postimg.cc/NLqfg6Dg/southeastemimg.png" alt="southeastemimg">
                                 </td>
                             </tr>
                             <tr>
-                                <td style="height: 88px;">
-                                    <img style="width: 103px; height: 47px;"
+                                <td class="pt_20" style="height: 88px;">
+                                    <img class="wh-100-45" style="width: 103px; height: 47px;"
                                         src="https://i.postimg.cc/V6SqXb5t/RITE.png" alt="RITE">
                                 </td>
                             </tr>
                             <tr>
                                 <td style="height: 88px;">
-                                    <img style="width: 97px; height: 50px;"
+                                    <img class="wh-95-45" style="width: 97px; height: 50px;"
                                         src="https://i.postimg.cc/50Nxrw8H/HARveys.png" alt="HARveys">
                                 </td>
                             </tr>
@@ -184,19 +285,19 @@
                             cellspacing="0" border="0">
                             <tr>
                                 <td style="height: 88px;">
-                                    <img style="width: 135px; height: 37px;" src="https://i.postimg.cc/7ZcCcz8Z/CVS.png"
-                                        alt="southeastemimg">
+                                    <img class="wh-125-34" style="width: 135px; height: 37px;"
+                                        src="https://i.postimg.cc/7ZcCcz8Z/CVS.png" alt="southeastemimg">
                                 </td>
                             </tr>
                             <tr>
                                 <td style="height: 88px;">
-                                    <img style="width: 137px; height: 43px;"
+                                    <img class="wh-125-40" style="width: 137px; height: 43px;"
                                         src="https://i.postimg.cc/9FYPh27v/WEIS.png" alt="RITE">
                                 </td>
                             </tr>
                             <tr>
                                 <td style="height: 88px;">
-                                    <img style="width: 114px; height: 51px;"
+                                    <img class="wh-105-46" style="width: 114px; height: 51px;"
                                         src="https://i.postimg.cc/9QhYspQF/freso.png" alt="HARveys">
                                 </td>
                             </tr>
@@ -207,19 +308,19 @@
                             cellspacing="0" border="0">
                             <tr>
                                 <td style="height: 88px;">
-                                    <img style="width: 152px; height: 36px;"
+                                    <img class="wh-146-33" style="width: 152px; height: 36px;"
                                         src="https://i.postimg.cc/RFJW4ZmL/Loves.png" alt="southeastemimg">
                                 </td>
                             </tr>
                             <tr>
                                 <td style="height: 88px;">
-                                    <img style="width: 134px; height: 43px;"
+                                    <img class="wh-125-34 " style="width: 134px; height: 43px;"
                                         src="https://i.postimg.cc/SxzMKp2S/Tops.png" alt="RITE">
                                 </td>
                             </tr>
                             <tr>
                                 <td style="height: 88px;">
-                                    <img style="width: 162px; height: 33px;"
+                                    <img class="wh-155-30" style="width: 162px; height: 33px;"
                                         src="https://i.postimg.cc/xC2QzBfV/Winn.png" alt="HARveys">
                                 </td>
                             </tr>
@@ -231,32 +332,37 @@
         </div>
     </section>
     <!-- cash add -->
-    <section style="width: 100%; padding-left: 12px; padding-right: 12px; padding-top: 40px; ">
-        <h2
-            style="font-family: Roboto;font-size: 24px;font-weight: 600;line-height: 120%;text-align: center; margin: 0;">
-            Add Cash at the
-            Register</h2>
-        <p
-            style="font-family: Roboto;font-size: 14px;font-weight: 400;line-height: 120%;text-align: center;max-width: 349px; margin: auto; padding-top: 10px; color: #4D4D4D;">
-            Your funds are loaded to your
-            account and available for crypto purchases in minutes!</p>
-        <div class="add_cash_card" style="text-align: center;">
-            <img src="https://i.postimg.cc/QNmgnBV2/barcode.png" alt="scanner"
-                style="padding-top: 25px; padding-bottom: 20px; max-width: 70px;">
+    <section style="width: 100%; padding-left: 12px; padding-right: 12px; padding-top: 30px; padding-bottom: 10px;">
+        <div class="container">
+            <h2
+                style="font-family: Roboto;font-size: 24px;font-weight: 600;line-height: 120%;text-align: center; margin: 0;">
+                Add Cash at the
+                Register</h2>
             <p
-                style="font-family: Roboto;font-size: 14px;font-weight: 400;line-height: 120%;text-align: center; color: black; max-width: 475px; margin: auto; padding-left: 12px; padding-right: 12px;">
-                Show
-                your barcode to the cashier at the register and let them know you want to add cash to your balance. The
-                cashier
-                will scan the barcode on your phone. Then, hand over the cash you want to deposit.</p>
-            <div style="text-align: center;padding-top: 18px; padding-bottom: 25px;">
-                <button style="background: #356CE1; padding-top: 15px;padding-bottom: 15px;padding-left: 24px;padding-right: 24px; border-radius: 10px; border: 0; color: white;font-size: 16px;font-weight: 600;line-height: 120%;text-align: center;
-                    ">Add Cash Now</button>
+                style="font-family: Roboto;font-size: 14px;font-weight: 400;line-height: 120%;text-align: center;max-width: 349px; margin: auto; padding-top: 10px; color: #4D4D4D; padding-bottom: 30px;">
+                Your funds are loaded to your
+                account and available for crypto purchases in minutes!</p>
+            <div class="card"
+                style="text-align: center; padding-top: 25px; padding-bottom: 45px; max-width: 537px; margin: auto;">
+                <img src="https://img.mailinblue.com/8005025/images/content_library/original/66bb0811e0dd87b5b9be33c2.png"
+                    alt="scanner" style=" padding-bottom: 20px;">
+                <p
+                    style="font-family: Roboto;font-size: 14px;font-weight: 400;line-height: 120%;text-align: center; color: black; max-width: 475px; margin: auto; padding-left: 12px; padding-right: 12px; padding-bottom: 30px;">
+                    Show
+                    your barcode to the cashier at the register and let them know you want to add cash to your balance.
+                    The
+                    cashier
+                    will scan the barcode on your phone. Then, hand over the cash you want to deposit.</p>
+                <div style="text-align: center;">
+                    <a href="" style="background: #356CE1; padding-top: 14px;padding-bottom: 14px;padding-left: 24px;padding-right: 24px; border-radius: 10px; border: 0; color: white;font-size: 16px;font-weight: 600;line-height: 120%;text-align: center;
+                    ">Add Cash Now</a>
+
+                </div>
             </div>
         </div>
     </section>
     <!-- crypto blue_box -->
-    <section style="padding-top: 60px;">
+    <section class="pt_20" style="padding-top: 60px;">
         <div class="container text-align: center;">
             <div style="margin: auto; background-image: url(https://i.postimg.cc/d3hX56Ns/aaaaa.png); background-size: cover; background-repeat: no-repeat; padding-top: 27px;padding-bottom: 27px; max-width: 630px; border-radius: 16px; "
                 class="p_30_24">
@@ -266,7 +372,8 @@
                         With Thousands of Retailers, Bitcoin is Just Around the Corner. </h1>
                 </div>
 
-                <div class="pt_20" style="text-align: center; padding-top: 33px;"><a class="fs_14"
+                <div class="pt_20" style="text-align: center; padding-top: 33px;padding-bottom: 27.5px;"><a
+                        class="fs_14"
                         style="line-height: 120%; padding:12px 24px; background-color: white; border-radius: 10px;color: #356CE1;  font-size: 16px; font-weight: 500;"
                         href="#">Nearby Stores</a></div>
             </div>
@@ -285,9 +392,7 @@
             <p
                 style="font-size: 14px; font-weight: 400; line-height: 150%; text-align: center; color: #000000; opacity: 70%;">
                 purchase is right around the corner.</p>
-
-            <table
-                style="max-width: 144px; margin-left: auto; margin-right: auto; margin-top: 20px; padding-bottom: 12px;">
+            <table style="max-width: 144px;  padding-top: 20px; padding-bottom: 20px;" class="mx-auto">
                 <tr>
                     <td>
                         <a href="https://www.facebook.com/" target="_blank"><img
