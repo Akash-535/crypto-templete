@@ -11,73 +11,13 @@
         * {
             padding: 0;
             margin: 0;
-            list-style-type: none;
+            box-sizing: border-box;
             text-decoration: none;
+            list-style-type: none;
         }
 
         body {
             font-family: "Roboto", sans-serif;
-        }
-
-        .common-class-paragraph {
-            font-weight: 400;
-            font-size: 14px;
-            opacity: 70%;
-            line-height: 150%;
-            color: #000000;
-        }
-
-        .common-card-heading {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 120%;
-            color: #000000;
-            text-align: center;
-        }
-
-        .fw-600 {
-            font-weight: 600;
-        }
-
-        .fs-16 {
-            font-size: 16px;
-        }
-
-        .fs-12 {
-            font-style: 12px;
-        }
-
-        .py-40 {
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .img-size {
-            max-width: 267px;
-        }
-
-        .fs-32 {
-            font-size: 32px;
-        }
-
-        .line-height-120 {
-            line-height: 120%;
-        }
-
-        .line-height-140 {
-            line-height: 140%;
-        }
-
-        .fs-24 {
-            font-size: 24px;
-        }
-
-        .text-black {
-            color: #000000;
         }
 
         .container {
@@ -87,8 +27,8 @@
             margin-right: auto;
         }
 
-        .max-width-595 {
-            max-width: 595px;
+        .max-width-675 {
+            max-width: 675px;
         }
 
         .mx-auto {
@@ -96,37 +36,54 @@
             margin-right: auto;
         }
 
-        @media (max-width:768px) {
-            .py-30 {
-                padding-top: 30px !important;
-                padding-bottom: 30px !important;
-            }
-
-            .fs-25 {
-                font-size: 25px !important;
-            }
-
+        .heading {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 116%;
+            text-align: center;
+            padding-bottom: 18px;
         }
+
+        .text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 130%;
+            text-align: center;
+            color: #4B4B4B;
+        }
+
+        .pt-4 {
+            padding-top: 4px;
+        }
+
+        .pt-50 {
+            padding-top: 50px;
+        }
+
+        .pt-40 {
+            padding-top: 40px;
+        }
+
+        .pb-42 {
+            padding-bottom: 42px;
+        }
+
+        .py-40 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .img-size {
+            width: 252px;
+            height: 161px;
+        }
+
 
         @media (max-width: 576px) {
             .heading {
                 font-size: 22px;
-                padding-bottom: 12px;
+                padding-bottom: 0;
             }
-
-            .fs-21 {
-                font-size: 21px !important;
-            }
-
-            .fs-19 {
-                font-size: 19px !important;
-            }
-
-            .py-25 {
-                padding-top: 25px !important;
-                padding-bottom: 25px !important;
-            }
-
 
             .pt-sm-25 {
                 padding-top: 25px;
@@ -137,19 +94,15 @@
             }
 
             .hero-section-padding {
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-
-            .py-10 {
-                padding-top: 10px !important;
-
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 24px;
+                padding-right: 24px;
             }
 
             .img-size {
-                width: 215px;
-                height: 150px;
-
+                width: 180px;
+                height: 114px;
             }
 
             .g-item1 {
@@ -176,57 +129,51 @@
                 display: grid;
                 grid-template-columns: auto;
                 grid-template-rows: auto;
-
             }
 
             .sm-pr-0 {
                 padding-right: 0px !important;
             }
 
-            .pb-10 {
-                padding-bottom: 10px !important;
+            .pt_sm_48 {
+                padding-top: 48px !important;
             }
 
-            .pt-15 {
-                padding-top: 15px !important;
+            .pt_sm_24 {
+                padding-top: 24px !important;
             }
 
-            .sm-pb-0 {
-                padding-bottom: 0 !important;
+            .pb_sm_32 {
+                padding-bottom: 32px !important;
+            }
+
+            .pb_sm_12 {
+                padding-top: 6px !important;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="page-count"
-        style="display: grid;grid-template-columns: auto; text-align: center; max-width: 555px; margin: auto; padding: 20px 0 10px ;">
-        <a href="/index.html" style="columns: 1/2; grid-row: 1/2;">page-1</a>
-        <a href="/index2.html" style="columns: 2/3; grid-row: 1/2;">page-2</a>
-        <a href="/index3.html" style="columns: 3/4; grid-row: 1/2;">page-3</a>
-        <a href="/index4.html" style="columns: 4/5; grid-row: 1/2;">page-4</a>
-        <a href="/index5.html" style="columns: 5/6; grid-row: 1/2;">page-5</a>
-        <a href="/index6.html" style="columns: 6/6; grid-row: 1/2;">page-6</a>
-    </div>
-    <!-- ---------hero-section--------- -->
-    <section style="width: 100%; background-color: #F6F8FF;" class="hero-section-padding py-40 py-30 py-25 ">
-        <div style=" padding-bottom: 32px;" class="text-center">
-            <a href="https://www.cryptodispensers.com/" target="_blank">
+    <!-- ------------- Your Guide to Adding a Bitcoin Wallet------------------- -->
+    <section style="width: 100%; background-color: #F6F8FF;" class="hero-section-padding py-40">
+        <div style="text-align: center; padding-bottom: 32px;">
+            <a href="https://www.cryptodispensers.com/" target="_blank" rel="noopener">
                 <img src="https://img.mailinblue.com/8005024/images/content_library/original/66bc478ce9738ca499bb1e2e.png"
                     alt="logo" width="186">
             </a>
         </div>
-        <div style="padding-bottom: 41px;" class="text-center">
+        <div style="text-align: center;padding-bottom: 41px;">
             <a href="/">
                 <img src="https://i.postimg.cc/wBQRyLd0/address.png" alt="hero-image" class="img-size">
             </a>
         </div>
-        <div style="width: 100%; padding-bottom: 18px;" class="text-center">
-            <p class="hero-section-heading fs-32 fw-600 line-height-120 fs-25  fs-21">
+        <div style="width: 100%;text-align: center;padding-bottom: 18px;">
+            <p class="heading">
                 Add Your Bitcoin Address</p>
         </div>
-        <div style="width: 100%;text-align: center; max-width: 419px; margin-right: auto; margin-left: auto; ">
-            <p class="common-class-paragraph" style="padding-left: 12px; padding-right: 12px;">
+        <div style="width: 100%;text-align: center; max-width: 419px; margin-right: auto; margin-left: auto;">
+            <p class="text">
                 Here’s a simple guide to help you set up your Bitcoin wallet. Setting up a Bitcoin wallet is a crucial
                 step
                 in managing
@@ -235,78 +182,82 @@
 
 
     </section>
-    <!-- ---------table --------->
-    <section class="mx-auto table-section py-10 max-width-595"
-        style="padding-left: 30px; padding-right: 30px; padding-top: 60px;  ">
+    <!-----------table section-------------->
+    <section style="padding-left: 29px; padding-right: 29px; padding-top: 60px;max-width: 675px;margin: auto;"
+        class="pt_sm_48">
         <div style="margin: auto;">
-            <h2 class="  fs-24 fw-600  line-height-120 text-center  text-black  py-30 py-25 fs-19 "
-                style="  padding-bottom: 40px;">
+            <h2 class="fs_27 pb_sm_32"
+                style="font-size: 24px; font-weight: 600;line-height: 120%;text-align: center; color: black; padding-bottom: 40px;">
                 Adding your BTC Wallet to Crypto Dispensers</h2>
             <div class="grid-card">
                 <table>
                     <tr class="grid-card">
-                        <td class="g-item1 sm-pr-0  pb-10 " style="  padding-right: 20px;  padding-bottom: 20px;">
-                            <div class="text-center "
-                                style=" padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 19px; border: 1px solid #356CE126; border-radius: 12px;">
+                        <td class="g-item1 sm-pr-0 pb_sm_12   " style="  padding-right: 20px;  padding-bottom: 20px;">
+                            <div
+                                style="text-align: center; padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 19px; border: 1px solid #356CE126; border-radius: 12px;">
                                 <img style="max-width: 48px;" src="https://i.postimg.cc/fLrH4WsP/qw.png" alt="image">
-                                <p class="common-card-heading" style="padding-bottom: 10px; padding-top: 19px;">
+                                <p
+                                    style="font-family: Roboto;font-size: 16px;font-weight: 600;line-height: 120%;text-align: center;  padding-bottom: 10px; padding-top: 19px;">
                                     Download a Wallet App</p>
-                                <p class="common-class-paragraph text-center sm-pb-0"
-                                    style=" max-width: 255px; padding-bottom: 60px; margin: auto; ">
+                                <p class="pb_sm_32"
+                                    style="font-family: Roboto;font-size: 14px; margin: auto;font-weight: 400;line-height: 21px;text-align: center; max-width: 255px; padding-bottom: 60px; opacity: 70%;">
                                     Find a Bitcoin Wallet app on iOS or Android, or continue with your existing wallet.
                                 </p>
                                 <p
-                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE1; padding-bottom: 6px; opacity: 10%;">
+                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE126; padding-bottom: 6px;">
                                     1</p>
                             </div>
                         </td>
-                        <td class="g-item2 sm-pr-0 pb-10" style=" padding-right: 20px; padding-bottom: 20px;">
-                            <div class="text-center "
-                                style=" padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 19px; border: 1px solid #356CE126; border-radius: 12px;">
+                        <td class="g-item2 sm-pr-0 pb_sm_12" style=" padding-right: 20px; padding-bottom: 20px;">
+                            <div
+                                style="text-align: center; padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 19px; border: 1px solid #356CE126; border-radius: 12px;">
                                 <img style="max-width: 48px;" src="https://i.postimg.cc/Y247vhvh/ass.png" alt="image">
-                                <p class="common-card-heading" style=" padding-bottom: 10px; padding-top: 19px;">
+                                <p
+                                    style="font-family: Roboto;font-size: 16px;font-weight: 600;line-height: 120%;text-align: center; padding-bottom: 10px; padding-top: 19px;">
                                     Set Up Your Wallet
                                 </p>
-                                <p class="common-class-paragraph sm-pb-0"
-                                    style=" max-width: 255px; padding-bottom: 39px;  margin: auto;">
+                                <p class="pb_sm_32"
+                                    style="font-family: Roboto;font-size:  14px; margin: auto; font-weight: 400;line-height: 21px;text-align: center; max-width: 255px; padding-bottom: 39px; opacity: 70%;">
                                     Follow the steps to set up a secure wallet, including creating a strong password and
                                     backing
                                     up your recovery phrase.
                                 </p>
                                 <p
-                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE1; padding-bottom: 6px; opacity: 10%;">
+                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE126; padding-bottom: 6px;">
                                     2</p>
                             </div>
                         </td>
                     </tr>
                     <tr class=" grid-card ">
-                        <td class="g-item3 sm-pr-0 pb-10" style="padding-right: 20px; padding-bottom: 20px;">
-                            <div class="text-center"
-                                style=" padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 19px; border: 1px solid #356CE126; border-radius: 12px;">
+                        <td class="g-item3 sm-pr-0 pb_sm_12" style="padding-right: 20px; padding-bottom: 20px;">
+                            <div
+                                style="text-align: center; padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 19px; border: 1px solid #356CE126; border-radius: 12px;">
                                 <img style="max-width: 48px;" src="https://i.postimg.cc/tCWHzwtb/qq.png" alt="image">
-                                <p class="common-card-heading" style="  padding-bottom: 10px; padding-top: 19px;">
+                                <p
+                                    style="font-family: Roboto;font-size: 16px;font-weight: 600;line-height: 120%;text-align: center;  padding-bottom: 10px; padding-top: 19px;">
                                     Copy Your Bitcoin Address
 
                                 </p>
-                                <p class="common-class-paragraph sm-pb-0"
-                                    style="max-width: 255px; padding-bottom: 60px; margin: auto;">
+                                <p class="pb_sm_32"
+                                    style="font-family: Roboto;font-size: 14px;font-weight: 400; margin: auto;line-height: 21px;text-align: center; max-width: 255px; padding-bottom: 60px; opacity: 70%;">
                                     Copy the alphanumeric string.
                                     This address is what you will use to receive Bitcoin transactions.
                                 </p>
                                 <p
-                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE1; padding-bottom: 6px; opacity: 10%;">
+                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE126; padding-bottom: 6px;">
                                     3</p>
                             </div>
                         </td>
-                        <td class="g-item4 sm-pr-0 pb-10" style="padding-right: 20px;   padding-bottom: 20px;">
-                            <div class="text-center"
-                                style=" padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 19px;  border: 1px solid #356CE126; border-radius: 12px;">
+                        <td class="g-item4 sm-pr-0 pb_sm_12" style="padding-right: 20px;   padding-bottom: 20px;">
+                            <div
+                                style="text-align: center; padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 19px;  border: 1px solid #356CE126; border-radius: 12px;">
                                 <img style="max-width: 48px;" src="https://i.postimg.cc/rw9XB4PY/adf.png" alt="image">
-                                <p class="common-card-heading" style="padding-bottom: 10px; padding-top: 19px;">
+                                <p
+                                    style="font-family: Roboto;font-size: 16px;font-weight: 600;line-height: 120%;text-align: center; padding-bottom: 10px; padding-top: 19px;">
                                     Add Your Bitcoin Wallet
                                 </p>
-                                <p class="common-class-paragraph sm-pb-0 "
-                                    style="max-width: 255px; padding-bottom: 60px; margin: auto;">
+                                <p class="pb_sm_32"
+                                    style="font-family: Roboto;font-size: 14px;font-weight: 400; margin: auto;line-height: 21px;text-align: center; max-width: 255px; padding-bottom: 60px; opacity: 70%;">
                                     Log in, click "Add Wallet," paste your BTC address, and create a nickname for easy
                                     access.
                                 </p>
@@ -318,43 +269,44 @@
                     </tr>
                 </table>
             </div>
-            <div class="pt-15" style="text-align: center;padding-top: 36px;">
+            <div style="text-align: center;padding-top: 36px;" class="pt_sm_24">
                 <a href="" style="background: #356CE1; padding-top: 12px; padding-bottom: 12px;padding-left: 24px;padding-right: 24px; border-radius: 10px; border: 0; color: white;font-size: 16px;font-weight: 500;line-height: 120%;text-align: center;
-                        ">Add Your Wallet</a>
+                 display:inline-grid;">Add Your Wallet</a>
             </div>
         </div>
     </section>
-    <!-- ----footer-section -->
-    <section class="footer-section py-30 py-25 " style="padding-top: 45px;">
-        <div class="container max-width-595 mx-auto">
-            <div style="text-align: center; padding-top: 35px; " class="logo-div pt-15">
+    <!-- footer -->
+    <section class="footer-section pb_sm_12" style="padding-top: 45px;">
+        <div class="container max-width-675 mx-auto">
+            <div style="text-align: center; padding-top: 35px; " class="logo-div">
                 <a href="#"><img style="max-width: 160px;" src="https://i.postimg.cc/7hyQJ5CV/qwert.png"
                         alt="logo" /></a>
             </div>
-            <p class="common-class-paragraph text-center" style="padding-top: 16px;">
+            <p
+                style="font-size: 14px; font-weight: 400; line-height: 150%; text-align: center; color: #000000; opacity: 70%; padding-top: 16px;">
                 Add your wallet and enjoy instant Bitcoin access.</p>
 
 
-            <table class="mx-auto text-center"
-                style="max-width: 144px;  padding-top: 20px; padding-bottom: 20px; padding-left: 30px; padding-right: 30px;">
+            <table
+                style="max-width: 144px; margin-left: auto; margin-right: auto; padding-top: 20px; padding-bottom: 20px;">
                 <tr>
                     <td>
-                        <a href="https://www.facebook.com/" target="_blank"><img
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img
                                 src="https://i.postimg.cc/FRwx6K3S/ri-facebook-fill-1.png" alt="face-book"
                                 style="width: 24px; height: 24px; border-radius: 36px" /></a>
                     </td>
                     <td style="padding-left: 16px;">
-                        <a href="https://x.com/?lang=en" target="_blank"><img
+                        <a href="https://x.com/?lang=en" target="_blank" rel="noopener"><img
                                 src="https://i.postimg.cc/pybqmddv/ri-twitter-x-line.png" alt="twitter"
                                 style="width: 24px; height: 24px; border-radius: 36px" /></a>
                     </td>
                     <td style="padding-left: 16px;">
-                        <a href="https://in.linkedin.com/" target="_blank"><img
+                        <a href="https://in.linkedin.com/" target="_blank" rel="noopener"><img
                                 src="https://i.postimg.cc/j5q5r6Q0/ri-linkedin-fill.png" alt="linked-in"
                                 style="width: 24px; height: 24px; border-radius: 36px" /></a>
                     </td>
                     <td style="padding-left: 16px;">
-                        <a href="https://www.instagram.com/" target="_blank"><img
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img
                                 src="https://i.postimg.cc/8kRSbfhL/ri-instagram-fill.png" alt="instagram"
                                 style="width: 24px; height: 24px; border-radius: 36px" /></a>
                     </td>
@@ -363,13 +315,15 @@
             <p style="text-align: center">
                 <a href="#" style="
                   color: #1f67d6;
-                  
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 120%;
                   text-decoration: underline;
                   padding-top: 20px;
-                " class="fw-600  fs-16 line-height-120 ">Unsubscribe</a>
+                ">Unsubscribe</a>
             </p>
             <p
-                style="text-align:center;padding-bottom: 25px; color: #3d3d3d;font-size: 12px; font-weight: 400; line-height: 190% ;padding-top: 30px; letter-spacing: 0.5px;">
+                style="text-align:center;padding-bottom: 35px; color: #3d3d3d;font-size: 12px; font-weight: 400; line-height: 190%;padding-top: 30px; letter-spacing: 0.5px;">
                 © Crypto Dispensers | 205 N Michigan Ave Suite 210 Chicago, IL 60601 |
                 (888) 212-2140
             </p>
